@@ -1,0 +1,13 @@
+.application {}
+
+.application__container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.application__content {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    margin: 0 auto;
+}

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Welcome.vue should render properly 1`] = `
+<section class="welcome">
+  <div class="application__content welcome__content">
+    <h1 class="welcome__title">
+      Hola, ¡bienvenido a POMODORO!
+    </h1>
+    <h2 class="welcome__subtitle">
+      Mejora tu productividad centrándote en lo importante de cada momento y sé más eficiente
+    </h2>
+    <button-stub>
+      Haz tu primer pomodoro
+    </button-stub>
+  </div>
+</section>
+`;

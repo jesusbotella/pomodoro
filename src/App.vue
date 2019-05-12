@@ -1,29 +1,34 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <router-view class="application__container"/>
   </div>
 </template>
 
 <style lang="scss">
+@import './styles/reset';
+@import './styles/layout';
+
+body {
+  margin: 0;
+  padding: 0;
+
+  // CSS Variables
+  // Colors
+  --application-color-primary: #E23434;
+  --application-color-accent: #333745;
+  --application-color-text: #FFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+               Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
 }
 </style>
