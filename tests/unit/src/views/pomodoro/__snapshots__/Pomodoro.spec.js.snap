@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pomodoro.vue should render properly 1`] = `
+<section class="pomodoro">
+  <div class="application__content pomodoro__content">
+    <h2 class="pomodoro__title">Pomodoro</h2>
+    <h1 class="pomodoro__type">work</h1>
+    <section class="pomodoro__timer">
+      00:00
+    </section> <button class="rounded-button">
+      <ion-icon-stub name="close"></ion-icon-stub>
+    </button>
+  </div>
+</section>
+`;

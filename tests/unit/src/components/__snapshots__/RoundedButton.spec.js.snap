@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RoundedButton.vue should render properly 1`] = `<button class="rounded-button">Haz tu primer pomodoro</button>`;

@@ -2,6 +2,6 @@
 
 exports[`Timer.vue should render properly 1`] = `
 <section>
-  00:00
+  02:01
 </section>
 `;
