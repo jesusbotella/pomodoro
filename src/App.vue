@@ -4,6 +4,14 @@
   </div>
 </template>
 
+<script>
+export default {
+  beforeMount() {
+    this.$store.dispatch('user/login');
+  },
+};
+</script>
+
 <style lang="scss">
 @import './styles/reset';
 @import './styles/layout';
