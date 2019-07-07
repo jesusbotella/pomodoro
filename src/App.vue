@@ -8,6 +8,13 @@
 export default {
   beforeMount() {
     this.$store.dispatch('user/login');
+
+    this.$store.dispatch('pomodoro/createPomodoro', {
+      type: 'work',
+      description: 'Test description',
+      profile: 'fake profile',
+      categories: ['category1', 'category2'],
+    });
   },
 };
 </script>

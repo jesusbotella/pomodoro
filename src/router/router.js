@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Welcome from '@/views/Welcome.vue';
 import Test from '@/views/Test.vue';
+import PomodoroList from '@/views/PomodoroList.vue';
 
 // Guards
 import checkIfLoggedIn from './guards/check-if-logged-in';
@@ -24,6 +25,11 @@ const router = new Router({
       meta: {
         requiresAuthentication: true,
       },
+    },
+    {
+      path: '/pomodoros',
+      name: 'pomodoros',
+      component: PomodoroList,
     },
     {
       path: '/pomodoro/:type',
