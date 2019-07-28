@@ -11,21 +11,31 @@
       <Button @click="onClick()">
         Haz tu primer pomodoro
       </Button>
+
+      <GoogleLogin
+        @success="onGoogleLoginSuccess" />
     </div>
   </section>
 </template>
 
 <script>
 import Button from '@/components/Button.vue';
+import GoogleLogin from '@/components/GoogleLogin.vue';
 
 export default {
   name: 'Home',
   components: {
     Button,
+    GoogleLogin,
   },
   methods: {
     onClick() {
       this.$router.push({ name: 'pomodoro', params: { type: 'work' } });
+    },
+    onGoogleLoginSuccess(user) {
+      const profile = user.getBasicProfile();
+      console.log(`Name: ${profile.getName()}`);
+      console.log(`Email: ${profile.getEmail()}`);
     },
   },
 };
